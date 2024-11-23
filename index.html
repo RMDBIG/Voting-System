@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Voting System</h1>
+
+        <!-- Voter Information Form -->
+        <section>
+            <h2>Voter Registration</h2>
+            <form id="voterForm">
+                <label for="voterName">Name:</label>
+                <input type="text" id="voterName" required>
+                <label for="voterLGA">LGA:</label>
+                <input type="text" id="voterLGA" required>
+                <label for="voterAge">Age:</label>
+                <input type="number" id="voterAge" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Display User Information -->
+        <section>
+            <h2>Registered Voter</h2>
+            <div id="voterInfo"></div>
+        </section>
+
+        <!-- Candidate Section -->
+        <section>
+            <h2>Candidates</h2>
+            <div id="candidatesList"></div>
+        </section>
+
+        <!-- Voting Section -->
+        <section>
+            <h2>Vote</h2>
+            <form id="voteForm">
+                <label for="candidateChoice">Choose Candidate:</label>
+                <select id="candidateChoice"></select>
+                <button type="submit">Vote</button>
+            </form>
+            <div id="voteResults"></div>
+        </section>
+
+        <!-- Ineligible and Eligible Voters -->
+        <section>
+            <h2>Voter Validation</h2>
+            <button id="validateVoters">Validate Voters</button>
+            <div id="voterStatus"></div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
